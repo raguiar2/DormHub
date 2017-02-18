@@ -1,5 +1,5 @@
 //
-//  Daha_wa_Controller.swift
+//  daha_wa_post.swift
 //  DormHub
 //
 //  Created by Rui Aguiar on 2/17/17.
@@ -8,12 +8,12 @@
 
 import UIKit
 
-class Daha_wa_Controller: UIViewController {
+class daha_wa_post: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // These tasks can also be done in IB if you prefer.
 
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,14 +21,12 @@ class Daha_wa_Controller: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func postButton(_ sender: Any) {
+    @IBOutlet var postText: UITextField!
+    
+    
+    @IBAction func daha_wa_post(_ sender: Any) {
         
     }
-    
-    // These strings will be the data for the table view cells
-    @IBOutlet var tableView: UITableView!
-
-    
 
     /*
     // MARK: - Navigation
