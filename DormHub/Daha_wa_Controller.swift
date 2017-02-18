@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Daha_wa_Controller: UIViewController {
+class Daha_wa_Controller: UIViewController, UITableViewDelegate {
     // These strings will be the data for the table view cells
     @IBOutlet var tableView: UITableView!
 
@@ -18,8 +18,14 @@ class Daha_wa_Controller: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.estimatedRowHeight = 109
+        tableView.rowHeight = UITableViewAutomaticDimension
+        //tableView.dataSource = tasks
+        tableView.reloadData()
+        for element in tasks{
+            print(element)
+        }
         // These tasks can also be done in IB if you prefer.
-
     }
 
     override func didReceiveMemoryWarning() {

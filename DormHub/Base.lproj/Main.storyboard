@@ -26,7 +26,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Does Anyone Have..."/>
                                 <connections>
-                                    <segue destination="fdw-3Q-63v" kind="show" id="4dm-Ms-ZCk"/>
+                                    <segue destination="fdw-3Q-63v" kind="show" id="N8d-ab-x05"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wnV-C4-RPv">
@@ -35,7 +35,6 @@
                                 <state key="normal" title="Classes"/>
                                 <connections>
                                     <action selector="goToClasses:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a5p-Tq-Jnd"/>
-                                    <segue destination="Re9-v5-acR" kind="show" id="aPk-UC-pEL"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -93,6 +92,23 @@
                                 <rect key="frame" x="0.0" y="66" width="375" height="601"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="A18-VB-Nzo">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="A18-VB-Nzo" id="rbO-W2-rLs">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2PI-OO-Hb6">
+                                                    <rect key="frame" x="311" y="13" width="56" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Answer!"/>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="55P-AW-mWa">
                                 <rect key="frame" x="16" y="25" width="65" height="33"/>
@@ -115,7 +131,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jtl-ar-Uls" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="201" y="986"/>
+            <point key="canvasLocation" x="220" y="1170.7646176911546"/>
         </scene>
         <!--Daha wa post-->
         <scene sceneID="V53-70-aeJ">
@@ -149,6 +165,7 @@
                                 <state key="normal" title="Post!"/>
                                 <connections>
                                     <action selector="daha_wa_post:" destination="cdI-oY-bIW" eventType="touchUpInside" id="lBm-iO-6qh"/>
+                                    <segue destination="fdw-3Q-63v" kind="show" id="mNx-HW-H12"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -160,7 +177,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IHC-KU-z16" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="973.60000000000002" y="984.55772113943033"/>
+            <point key="canvasLocation" x="1302" y="985"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="mNx-HW-H12"/>
+    </inferredMetricsTieBreakers>
 </document>
