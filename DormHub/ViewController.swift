@@ -23,5 +23,10 @@ class ViewController: UIViewController {
     
     // Sara is dumb #treeHacks2017
 
+    @IBAction func goToClasses(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "classes", sender: self);
+    }
+    
+    
 }
 
