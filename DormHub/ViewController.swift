@@ -12,6 +12,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("Opened")
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -24,7 +25,7 @@ class ViewController: UIViewController {
     // Sara is dumb #treeHacks2017
 
     @IBAction func goToClasses(_ sender: UIButton) {
-        self.performSegue(withIdentifier: "classes", sender: self);
+        self.performSegue(withIdentifier: "courseSearch", sender: self);
     }
     
     

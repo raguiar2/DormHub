@@ -13,9 +13,9 @@
 		8B89BF321E5816C20005A7AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B89BF311E5816C20005A7AC /* Assets.xcassets */; };
 		8B89BF351E5816C20005A7AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B89BF331E5816C20005A7AC /* LaunchScreen.storyboard */; };
 		8B89BF3D1E581B070005A7AC /* Daha_wa_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B89BF3C1E581B070005A7AC /* Daha_wa_Controller.swift */; };
-		8B89BF3F1E5823230005A7AC /* daha_wa_post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B89BF3E1E5823230005A7AC /* daha_wa_post.swift */; };
-		8B89BF421E5825D00005A7AC /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B89BF411E5825D00005A7AC /* CoreData.framework */; };
-		8B89BF681E58276F0005A7AC /* dahaModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8B89BF661E58276F0005A7AC /* dahaModel.xcdatamodeld */; };
+		EF15A30D1E581DCD004FF8D2 /* CourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF15A30C1E581DCD004FF8D2 /* CourseViewController.swift */; };
+		EF15A30F1E581E66004FF8D2 /* CourseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF15A30E1E581E66004FF8D2 /* CourseModel.swift */; };
+		EF15A3111E581EC9004FF8D2 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF15A3101E581EC9004FF8D2 /* Course.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,9 +27,9 @@
 		8B89BF341E5816C20005A7AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B89BF361E5816C20005A7AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B89BF3C1E581B070005A7AC /* Daha_wa_Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Daha_wa_Controller.swift; sourceTree = "<group>"; };
-		8B89BF3E1E5823230005A7AC /* daha_wa_post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = daha_wa_post.swift; sourceTree = "<group>"; };
-		8B89BF411E5825D00005A7AC /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		8B89BF671E58276F0005A7AC /* dahaModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = dahaModel.xcdatamodel; sourceTree = "<group>"; };
+		EF15A30C1E581DCD004FF8D2 /* CourseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseViewController.swift; sourceTree = "<group>"; };
+		EF15A30E1E581E66004FF8D2 /* CourseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseModel.swift; sourceTree = "<group>"; };
+		EF15A3101E581EC9004FF8D2 /* Course.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +66,9 @@
 			children = (
 				8B89BF2A1E5816C20005A7AC /* AppDelegate.swift */,
 				8B89BF2C1E5816C20005A7AC /* ViewController.swift */,
+				EF15A30C1E581DCD004FF8D2 /* CourseViewController.swift */,
+				EF15A3101E581EC9004FF8D2 /* Course.swift */,
+				EF15A30E1E581E66004FF8D2 /* CourseModel.swift */,
 				8B89BF2E1E5816C20005A7AC /* Main.storyboard */,
 				8B89BF3E1E5823230005A7AC /* daha_wa_post.swift */,
 				8B89BF3C1E581B070005A7AC /* Daha_wa_Controller.swift */,
@@ -158,11 +161,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF15A3111E581EC9004FF8D2 /* Course.swift in Sources */,
 				8B89BF2D1E5816C20005A7AC /* ViewController.swift in Sources */,
-				8B89BF681E58276F0005A7AC /* dahaModel.xcdatamodeld in Sources */,
+				EF15A30F1E581E66004FF8D2 /* CourseModel.swift in Sources */,
 				8B89BF3D1E581B070005A7AC /* Daha_wa_Controller.swift in Sources */,
 				8B89BF2B1E5816C20005A7AC /* AppDelegate.swift in Sources */,
-				8B89BF3F1E5823230005A7AC /* daha_wa_post.swift in Sources */,
+				EF15A30D1E581DCD004FF8D2 /* CourseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +328,7 @@
 				8B89BF3B1E5816C20005A7AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
