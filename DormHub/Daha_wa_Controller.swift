@@ -20,6 +20,10 @@ class Daha_wa_Controller: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func postButton(_ sender: Any) {
+        
+    }
+    
 
     /*
     // MARK: - Navigation
