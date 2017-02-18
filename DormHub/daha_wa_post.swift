@@ -25,8 +25,16 @@ class daha_wa_post: UIViewController {
     
     
     @IBAction func daha_wa_post(_ sender: Any) {
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        let task = DAHAPost(context: context) // Link Task & Context
+        task.name = postText.text!
         
+        // Save the data to coredata
+        (UIApplication.shared.delegate as! AppDelegate).saveContext()
+        
+        let _ = navigationController?.popViewController(animated: true)
     }
+}
 
     /*
     // MARK: - Navigation
@@ -38,4 +46,4 @@ class daha_wa_post: UIViewController {
     }
     */
 
-}
+
