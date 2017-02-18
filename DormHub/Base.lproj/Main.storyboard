@@ -37,31 +37,59 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <connections>
-                        <segue destination="Re9-v5-acR" kind="show" identifier="classes" id="UXi-qW-076"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="202" y="134"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="wiJ-QL-U0Y">
+        <scene sceneID="ZVU-NA-dtu">
             <objects>
-                <viewController id="Re9-v5-acR" sceneMemberID="viewController">
+                <viewController id="xiN-B2-k3w" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ySm-r4-EOc"/>
-                        <viewControllerLayoutGuide type="bottom" id="8SF-Cv-Amr"/>
+                        <viewControllerLayoutGuide type="top" id="u1e-1w-l2B"/>
+                        <viewControllerLayoutGuide type="bottom" id="AzC-Nw-PNb"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="cls-xx-GFg">
+                    <view key="view" contentMode="scaleToFill" id="fTb-SH-yj4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AUs-RN-YKw">
+                                <rect key="frame" x="0.0" y="28" width="282" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="xiN-B2-k3w" id="nMJ-HQ-hAA"/>
+                                </connections>
+                            </searchBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q23-Ei-7dN">
+                                <rect key="frame" x="282" y="28" width="93" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.80392156859999997" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                <state key="normal" title="Search">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="XhW-bS-2QR" id="h1q-B7-a5H"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9YV-fK-5zC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yao-Wg-TJU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="XhW-bS-2QR">
+                    <connections>
+                        <outlet property="delegate" destination="xiN-B2-k3w" id="2Cd-cf-fSg"/>
+                        <outlet property="searchBar" destination="AUs-RN-YKw" id="1Gy-6k-O3e"/>
+                        <outlet property="searchContentsController" destination="xiN-B2-k3w" id="CKQ-fN-XN0"/>
+                        <outlet property="searchResultsDataSource" destination="xiN-B2-k3w" id="Yhh-8x-Icx"/>
+                        <outlet property="searchResultsDelegate" destination="xiN-B2-k3w" id="Xz8-eV-wgS"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="1146" y="-148"/>
+            <point key="canvasLocation" x="1183" y="64"/>
         </scene>
         <!--Daha wa Controller-->
         <scene sceneID="nuP-i9-23p">
