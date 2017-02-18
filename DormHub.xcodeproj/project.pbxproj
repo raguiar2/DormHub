@@ -12,6 +12,7 @@
 		8B89BF301E5816C20005A7AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B89BF2E1E5816C20005A7AC /* Main.storyboard */; };
 		8B89BF321E5816C20005A7AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B89BF311E5816C20005A7AC /* Assets.xcassets */; };
 		8B89BF351E5816C20005A7AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B89BF331E5816C20005A7AC /* LaunchScreen.storyboard */; };
+		8B89BF3D1E581B070005A7AC /* Daha_wa_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B89BF3C1E581B070005A7AC /* Daha_wa_Controller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		8B89BF311E5816C20005A7AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B89BF341E5816C20005A7AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B89BF361E5816C20005A7AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B89BF3C1E581B070005A7AC /* Daha_wa_Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Daha_wa_Controller.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				8B89BF2A1E5816C20005A7AC /* AppDelegate.swift */,
 				8B89BF2C1E5816C20005A7AC /* ViewController.swift */,
 				8B89BF2E1E5816C20005A7AC /* Main.storyboard */,
+				8B89BF3C1E581B070005A7AC /* Daha_wa_Controller.swift */,
 				8B89BF311E5816C20005A7AC /* Assets.xcassets */,
 				8B89BF331E5816C20005A7AC /* LaunchScreen.storyboard */,
 				8B89BF361E5816C20005A7AC /* Info.plist */,
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B89BF2D1E5816C20005A7AC /* ViewController.swift in Sources */,
+				8B89BF3D1E581B070005A7AC /* Daha_wa_Controller.swift in Sources */,
 				8B89BF2B1E5816C20005A7AC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
