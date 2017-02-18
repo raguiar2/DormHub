@@ -79,7 +79,6 @@
 				8B89BF331E5816C20005A7AC /* LaunchScreen.storyboard */,
 				8B89BF361E5816C20005A7AC /* Info.plist */,
 				8BE5E2C31E5851F70013B12C /* dahaModel.xcdatamodeld */,
-				8B89BF661E58276F0005A7AC /* dahaModel.xcdatamodeld */,
 			);
 			path = DormHub;
 			sourceTree = "<group>";
@@ -338,14 +337,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		8B89BF661E58276F0005A7AC /* dahaModel.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-			);
-			path = dahaModel.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
 		8BE5E2C31E5851F70013B12C /* dahaModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
