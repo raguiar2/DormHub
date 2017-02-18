@@ -16,7 +16,7 @@
 		8BE5E2C21E5851EC0013B12C /* daha_wa_post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE5E2C11E5851EC0013B12C /* daha_wa_post.swift */; };
 		8BE5E2C51E5851F70013B12C /* dahaModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8BE5E2C31E5851F70013B12C /* dahaModel.xcdatamodeld */; };
 		8BE5E2C91E5860BF0013B12C /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE5E2C81E5860BF0013B12C /* PostTableViewCell.swift */; };
-		8BE5E2CB1E5862F90013B12C /* PostTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE5E2CA1E5862F90013B12C /* PostTableViewController.swift */; };
+		8BE5E2CD1E586F2D0013B12C /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE5E2CC1E586F2D0013B12C /* ListViewController.swift */; };
 		EF15A30D1E581DCD004FF8D2 /* CourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF15A30C1E581DCD004FF8D2 /* CourseViewController.swift */; };
 		EF15A30F1E581E66004FF8D2 /* CourseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF15A30E1E581E66004FF8D2 /* CourseModel.swift */; };
 		EF15A3111E581EC9004FF8D2 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF15A3101E581EC9004FF8D2 /* Course.swift */; };
@@ -34,7 +34,7 @@
 		8BE5E2C11E5851EC0013B12C /* daha_wa_post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = daha_wa_post.swift; sourceTree = "<group>"; };
 		8BE5E2C41E5851F70013B12C /* dahaModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = dahaModel.xcdatamodel; sourceTree = "<group>"; };
 		8BE5E2C81E5860BF0013B12C /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
-		8BE5E2CA1E5862F90013B12C /* PostTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewController.swift; sourceTree = "<group>"; };
+		8BE5E2CC1E586F2D0013B12C /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		EF15A30C1E581DCD004FF8D2 /* CourseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseViewController.swift; sourceTree = "<group>"; };
 		EF15A30E1E581E66004FF8D2 /* CourseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseModel.swift; sourceTree = "<group>"; };
 		EF15A3101E581EC9004FF8D2 /* Course.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
@@ -77,9 +77,9 @@
 				EF15A3101E581EC9004FF8D2 /* Course.swift */,
 				EF15A30E1E581E66004FF8D2 /* CourseModel.swift */,
 				8B89BF2E1E5816C20005A7AC /* Main.storyboard */,
+				8BE5E2CC1E586F2D0013B12C /* ListViewController.swift */,
 				8BE5E2C81E5860BF0013B12C /* PostTableViewCell.swift */,
 				8BE5E2C11E5851EC0013B12C /* daha_wa_post.swift */,
-				8BE5E2CA1E5862F90013B12C /* PostTableViewController.swift */,
 				8B89BF3C1E581B070005A7AC /* Daha_wa_Controller.swift */,
 				8B89BF311E5816C20005A7AC /* Assets.xcassets */,
 				8B89BF331E5816C20005A7AC /* LaunchScreen.storyboard */,
@@ -174,10 +174,10 @@
 				EF15A30F1E581E66004FF8D2 /* CourseModel.swift in Sources */,
 				8BE5E2C21E5851EC0013B12C /* daha_wa_post.swift in Sources */,
 				8B89BF3D1E581B070005A7AC /* Daha_wa_Controller.swift in Sources */,
-				8BE5E2CB1E5862F90013B12C /* PostTableViewController.swift in Sources */,
 				8BE5E2C91E5860BF0013B12C /* PostTableViewCell.swift in Sources */,
 				8BE5E2C51E5851F70013B12C /* dahaModel.xcdatamodeld in Sources */,
 				8B89BF2B1E5816C20005A7AC /* AppDelegate.swift in Sources */,
+				8BE5E2CD1E586F2D0013B12C /* ListViewController.swift in Sources */,
 				EF15A30D1E581DCD004FF8D2 /* CourseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
