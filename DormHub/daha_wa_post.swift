@@ -29,10 +29,11 @@ class daha_wa_post: UIViewController {
         let task = DAHAPost(context: context) // Link Task & Context
         task.name = postText.text!
         do { try context.save()} catch{}
+        performSegue(withIdentifier: "post_to_table", sender: self)
         
         // Save the data to coredata
         
-    let _ = navigationController?.popViewController(animated: true)
+
     }
 }
 

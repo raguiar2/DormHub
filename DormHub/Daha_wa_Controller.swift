@@ -22,9 +22,9 @@ class Daha_wa_Controller: UIViewController, UITableViewDelegate {
         tableView.rowHeight = UITableViewAutomaticDimension
         //tableView.dataSource = tasks
         tableView.reloadData()
-        for element in tasks{
-            print(element)
-        }
+        print("HI")
+        getData()
+        print(tasks.count)
         // These tasks can also be done in IB if you prefer.
     }
 
