@@ -24,7 +24,7 @@ class CourseViewController: UITableViewController {
         searchController.searchResultsUpdater = self
         searchController.dimsBackgroundDuringPresentation = true
         definesPresentationContext = true
-        searchController.searchBar.barTintColor = UIColor.init(red: 4/255, green: <#T##CGFloat#>, blue: <#T##CGFloat#>, alpha: 1)
+        searchController.searchBar.barTintColor = UIColor.red
         tableView.tableHeaderView = searchController.searchBar
     }
     
