@@ -37,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B89BF421E5825D00005A7AC /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +49,7 @@
 			children = (
 				8B89BF291E5816C20005A7AC /* DormHub */,
 				8B89BF281E5816C20005A7AC /* Products */,
+				8B89BF401E5825D00005A7AC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,12 +70,22 @@
 				EF15A3101E581EC9004FF8D2 /* Course.swift */,
 				EF15A30E1E581E66004FF8D2 /* CourseModel.swift */,
 				8B89BF2E1E5816C20005A7AC /* Main.storyboard */,
+				8B89BF3E1E5823230005A7AC /* daha_wa_post.swift */,
 				8B89BF3C1E581B070005A7AC /* Daha_wa_Controller.swift */,
 				8B89BF311E5816C20005A7AC /* Assets.xcassets */,
 				8B89BF331E5816C20005A7AC /* LaunchScreen.storyboard */,
 				8B89BF361E5816C20005A7AC /* Info.plist */,
+				8B89BF661E58276F0005A7AC /* dahaModel.xcdatamodeld */,
 			);
 			path = DormHub;
+			sourceTree = "<group>";
+		};
+		8B89BF401E5825D00005A7AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8B89BF411E5825D00005A7AC /* CoreData.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,6 +331,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8B89BF661E58276F0005A7AC /* dahaModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8B89BF671E58276F0005A7AC /* dahaModel.xcdatamodel */,
+			);
+			currentVersion = 8B89BF671E58276F0005A7AC /* dahaModel.xcdatamodel */;
+			path = dahaModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 8B89BF1F1E5816BF0005A7AC /* Project object */;
 }
