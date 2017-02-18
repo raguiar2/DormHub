@@ -28,11 +28,11 @@ class daha_wa_post: UIViewController {
         let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
         let task = DAHAPost(context: context) // Link Task & Context
         task.name = postText.text!
+        do { try context.save()} catch{}
         
         // Save the data to coredata
-        (UIApplication.shared.delegate as! AppDelegate).saveContext()
         
-        let _ = navigationController?.popViewController(animated: true)
+    let _ = navigationController?.popViewController(animated: true)
     }
 }
 
