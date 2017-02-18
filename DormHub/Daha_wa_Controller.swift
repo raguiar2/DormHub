@@ -19,16 +19,14 @@ class Daha_wa_Controller: UIViewController, UITableViewDelegate,UITableViewDataS
     let cellReuseIdentifier = "cell"
     let cellSpacingHeight: CGFloat = 5
     
+    //Sets up table
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.estimatedRowHeight = 109
-        tableView.rowHeight = UITableViewAutomaticDimension
         self.tableView.allowsSelection = true
         self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)
         self.tableView.delegate = self
         self.tableView.dataSource = self
         tableView.reloadData()
-        // These tasks can also be done in IB if you prefer.
     }
 
     override func didReceiveMemoryWarning() {
@@ -68,11 +66,9 @@ class Daha_wa_Controller: UIViewController, UITableViewDelegate,UITableViewDataS
      func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell:UITableViewCell = self.tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier) as UITableViewCell!
 
-        let task = tasks[tasks.count-1-indexPath.row]
-
-        if let myName = task.name {
-            cell.textLabel?.text = myName
-        }
+        let task = self.tasks[indexPath.section]
+        cell.textLabel?.text = task.name
+        
         cell.backgroundColor = UIColor.white
         cell.layer.borderColor = UIColor.black.cgColor
         cell.layer.borderWidth = 1
@@ -81,15 +77,26 @@ class Daha_wa_Controller: UIViewController, UITableViewDelegate,UITableViewDataS
 
                return cell
     }
+    //number of sectons
     func numberOfSections(in tableView: UITableView) -> Int {
         return self.tasks.count
     }
     
     // method to run when table view cell is tapped
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        // note that indexPath.section is used rather than indexPath.row
-        print("You tapped cell number \(indexPath.section).")
+        //performSegue(withIdentifier: "table_to_post", sender: self)
+
     }
+    
+    // Make the background color show through
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let headerView = UIView()
+       // let backgroundcolor =  UIColor(red: 94/255.0, green: 218/255.0, blue: 219/255.0, alpha: 1.0)
+
+        headerView.backgroundColor = UIColor.clear
+        return headerView
+    }
+    
 
     /*
     // MARK: - Navigation

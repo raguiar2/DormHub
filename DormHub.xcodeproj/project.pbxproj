@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52BCA2B3278A796183035CF3 /* Pods_DormHub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBE3AEC073C9641092702BF1 /* Pods_DormHub.framework */; };
 		8B89BF2B1E5816C20005A7AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B89BF2A1E5816C20005A7AC /* AppDelegate.swift */; };
-		8B89BF2D1E5816C20005A7AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B89BF2C1E5816C20005A7AC /* ViewController.swift */; };
+		8B89BF2D1E5816C20005A7AC /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B89BF2C1E5816C20005A7AC /* NavigationController.swift */; };
 		8B89BF301E5816C20005A7AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B89BF2E1E5816C20005A7AC /* Main.storyboard */; };
 		8B89BF321E5816C20005A7AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B89BF311E5816C20005A7AC /* Assets.xcassets */; };
 		8B89BF351E5816C20005A7AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B89BF331E5816C20005A7AC /* LaunchScreen.storyboard */; };
@@ -17,15 +18,19 @@
 		8BE5E2C51E5851F70013B12C /* dahaModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8BE5E2C31E5851F70013B12C /* dahaModel.xcdatamodeld */; };
 		8BE5E2C91E5860BF0013B12C /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE5E2C81E5860BF0013B12C /* PostTableViewCell.swift */; };
 		8BE5E2CD1E586F2D0013B12C /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE5E2CC1E586F2D0013B12C /* ListViewController.swift */; };
+		8BE5E2CF1E58F4580013B12C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8BE5E2CE1E58F4580013B12C /* GoogleService-Info.plist */; };
+		8BE5E2D11E58FB090013B12C /* SignInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE5E2D01E58FB090013B12C /* SignInController.swift */; };
 		EF15A30D1E581DCD004FF8D2 /* CourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF15A30C1E581DCD004FF8D2 /* CourseViewController.swift */; };
 		EF15A30F1E581E66004FF8D2 /* CourseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF15A30E1E581E66004FF8D2 /* CourseModel.swift */; };
 		EF15A3111E581EC9004FF8D2 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF15A3101E581EC9004FF8D2 /* Course.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4E36EE56C1BD834BE0EBF842 /* Pods-DormHub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DormHub.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DormHub/Pods-DormHub.debug.xcconfig"; sourceTree = "<group>"; };
+		57E661F2A550DCE8352808C9 /* Pods-DormHub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DormHub.release.xcconfig"; path = "Pods/Target Support Files/Pods-DormHub/Pods-DormHub.release.xcconfig"; sourceTree = "<group>"; };
 		8B89BF271E5816C20005A7AC /* DormHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DormHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B89BF2A1E5816C20005A7AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8B89BF2C1E5816C20005A7AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8B89BF2C1E5816C20005A7AC /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		8B89BF2F1E5816C20005A7AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8B89BF311E5816C20005A7AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B89BF341E5816C20005A7AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -35,6 +40,9 @@
 		8BE5E2C41E5851F70013B12C /* dahaModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = dahaModel.xcdatamodel; sourceTree = "<group>"; };
 		8BE5E2C81E5860BF0013B12C /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		8BE5E2CC1E586F2D0013B12C /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		8BE5E2CE1E58F4580013B12C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8BE5E2D01E58FB090013B12C /* SignInController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInController.swift; sourceTree = "<group>"; };
+		BBE3AEC073C9641092702BF1 /* Pods_DormHub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DormHub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF15A30C1E581DCD004FF8D2 /* CourseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseViewController.swift; sourceTree = "<group>"; };
 		EF15A30E1E581E66004FF8D2 /* CourseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseModel.swift; sourceTree = "<group>"; };
 		EF15A3101E581EC9004FF8D2 /* Course.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
@@ -45,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52BCA2B3278A796183035CF3 /* Pods_DormHub.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +66,7 @@
 				8B89BF291E5816C20005A7AC /* DormHub */,
 				8B89BF281E5816C20005A7AC /* Products */,
 				8B89BF401E5825D00005A7AC /* Frameworks */,
+				EEBC157CBCBDB59D3DCE9A2C /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,7 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				8B89BF2A1E5816C20005A7AC /* AppDelegate.swift */,
-				8B89BF2C1E5816C20005A7AC /* ViewController.swift */,
+				8B89BF2C1E5816C20005A7AC /* NavigationController.swift */,
 				EF15A30C1E581DCD004FF8D2 /* CourseViewController.swift */,
 				EF15A3101E581EC9004FF8D2 /* Course.swift */,
 				EF15A30E1E581E66004FF8D2 /* CourseModel.swift */,
@@ -81,6 +91,8 @@
 				8BE5E2C81E5860BF0013B12C /* PostTableViewCell.swift */,
 				8BE5E2C11E5851EC0013B12C /* daha_wa_post.swift */,
 				8B89BF3C1E581B070005A7AC /* Daha_wa_Controller.swift */,
+				8BE5E2D01E58FB090013B12C /* SignInController.swift */,
+				8BE5E2CE1E58F4580013B12C /* GoogleService-Info.plist */,
 				8B89BF311E5816C20005A7AC /* Assets.xcassets */,
 				8B89BF331E5816C20005A7AC /* LaunchScreen.storyboard */,
 				8B89BF361E5816C20005A7AC /* Info.plist */,
@@ -92,8 +104,18 @@
 		8B89BF401E5825D00005A7AC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BBE3AEC073C9641092702BF1 /* Pods_DormHub.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EEBC157CBCBDB59D3DCE9A2C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4E36EE56C1BD834BE0EBF842 /* Pods-DormHub.debug.xcconfig */,
+				57E661F2A550DCE8352808C9 /* Pods-DormHub.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -103,9 +125,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8B89BF391E5816C20005A7AC /* Build configuration list for PBXNativeTarget "DormHub" */;
 			buildPhases = (
+				9C49BAEDECD29BC03BA92140 /* [CP] Check Pods Manifest.lock */,
 				8B89BF231E5816BF0005A7AC /* Sources */,
 				8B89BF241E5816BF0005A7AC /* Frameworks */,
 				8B89BF251E5816BF0005A7AC /* Resources */,
+				F56F2A2D722F08C15300F16C /* [CP] Embed Pods Frameworks */,
+				AAED5D8E166F4E8F098C6471 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -157,6 +182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B89BF351E5816C20005A7AC /* LaunchScreen.storyboard in Resources */,
+				8BE5E2CF1E58F4580013B12C /* GoogleService-Info.plist in Resources */,
 				8B89BF321E5816C20005A7AC /* Assets.xcassets in Resources */,
 				8B89BF301E5816C20005A7AC /* Main.storyboard in Resources */,
 			);
@@ -164,13 +190,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9C49BAEDECD29BC03BA92140 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AAED5D8E166F4E8F098C6471 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DormHub/Pods-DormHub-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F56F2A2D722F08C15300F16C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DormHub/Pods-DormHub-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8B89BF231E5816BF0005A7AC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				EF15A3111E581EC9004FF8D2 /* Course.swift in Sources */,
-				8B89BF2D1E5816C20005A7AC /* ViewController.swift in Sources */,
+				8B89BF2D1E5816C20005A7AC /* NavigationController.swift in Sources */,
 				EF15A30F1E581E66004FF8D2 /* CourseModel.swift in Sources */,
 				8BE5E2C21E5851EC0013B12C /* daha_wa_post.swift in Sources */,
 				8B89BF3D1E581B070005A7AC /* Daha_wa_Controller.swift in Sources */,
@@ -179,6 +253,7 @@
 				8B89BF2B1E5816C20005A7AC /* AppDelegate.swift in Sources */,
 				8BE5E2CD1E586F2D0013B12C /* ListViewController.swift in Sources */,
 				EF15A30D1E581DCD004FF8D2 /* CourseViewController.swift in Sources */,
+				8BE5E2D11E58FB090013B12C /* SignInController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +372,7 @@
 		};
 		8B89BF3A1E5816C20005A7AC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E36EE56C1BD834BE0EBF842 /* Pods-DormHub.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 52PCE88C46;
@@ -310,6 +386,7 @@
 		};
 		8B89BF3B1E5816C20005A7AC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57E661F2A550DCE8352808C9 /* Pods-DormHub.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 52PCE88C46;
