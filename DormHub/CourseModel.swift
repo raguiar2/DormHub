@@ -27,9 +27,12 @@ class CourseModel {
     }
     
     func searchForCourses(substr: String) -> [Course] {
+        let searchTerm = substr.lowercased()
         var matchedCourses : [Course] = []
         for course in courseList {
-            if (course.getTitle().contains(substr)) {
+            if (course.getTitle().lowercased().contains(searchTerm)) {
+                matchedCourses.append(course)
+            } else if (course.getInstructor().lowercased().contains(searchTerm)) {
                 matchedCourses.append(course)
             }
         }
