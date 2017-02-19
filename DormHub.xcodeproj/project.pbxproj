@@ -14,6 +14,7 @@
 		8B89BF321E5816C20005A7AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B89BF311E5816C20005A7AC /* Assets.xcassets */; };
 		8B89BF351E5816C20005A7AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B89BF331E5816C20005A7AC /* LaunchScreen.storyboard */; };
 		8B89BF3D1E581B070005A7AC /* Daha_wa_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B89BF3C1E581B070005A7AC /* Daha_wa_Controller.swift */; };
+		8BB1F7811E592D6B00DCD055 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BB1F7801E592D6B00DCD055 /* AdSupport.framework */; };
 		8BE5E2C21E5851EC0013B12C /* daha_wa_post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE5E2C11E5851EC0013B12C /* daha_wa_post.swift */; };
 		8BE5E2C51E5851F70013B12C /* dahaModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8BE5E2C31E5851F70013B12C /* dahaModel.xcdatamodeld */; };
 		8BE5E2C91E5860BF0013B12C /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE5E2C81E5860BF0013B12C /* PostTableViewCell.swift */; };
@@ -36,6 +37,7 @@
 		8B89BF341E5816C20005A7AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B89BF361E5816C20005A7AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B89BF3C1E581B070005A7AC /* Daha_wa_Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Daha_wa_Controller.swift; sourceTree = "<group>"; };
+		8BB1F7801E592D6B00DCD055 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		8BE5E2C11E5851EC0013B12C /* daha_wa_post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = daha_wa_post.swift; sourceTree = "<group>"; };
 		8BE5E2C41E5851F70013B12C /* dahaModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = dahaModel.xcdatamodel; sourceTree = "<group>"; };
 		8BE5E2C81E5860BF0013B12C /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BB1F7811E592D6B00DCD055 /* AdSupport.framework in Frameworks */,
 				52BCA2B3278A796183035CF3 /* Pods_DormHub.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -104,6 +107,7 @@
 		8B89BF401E5825D00005A7AC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8BB1F7801E592D6B00DCD055 /* AdSupport.framework */,
 				BBE3AEC073C9641092702BF1 /* Pods_DormHub.framework */,
 			);
 			name = Frameworks;

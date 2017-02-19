@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import Firebase
+import GoogleSignIn
+import FirebaseAuth
 
 class daha_wa_post: UIViewController {
 
@@ -26,12 +29,32 @@ class daha_wa_post: UIViewController {
     
     @IBAction func daha_wa_post(_ sender: Any) {
         let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        // Save the data to coredata- username, email, id, etc.
         let task = DAHAPost(context: context) // Link Task & Context
+        
         task.name = postText.text!
+        // The user's ID, unique to the Firebase project.
+        // Do NOT use this value to authenticate with your backend server,
+        // if you have one. Use getTokenWithCompletion:completion: instead.
+        let user = FIRAuth.auth()?.currentUser
+
+        let email = user?.email
+        let uid = user?.uid
+        let photoURL = user?.photoURL
+        task.email = email;
+        task.userid=uid;
+        
         do { try context.save()} catch{}
+        
+        
+
+        
+        
+        
+        
+        //goes back to post
         performSegue(withIdentifier: "post_to_table", sender: self)
         
-        // Save the data to coredata
         
 
     }

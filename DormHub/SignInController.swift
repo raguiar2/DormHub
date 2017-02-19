@@ -17,7 +17,12 @@ class SignInController: UIViewController, GIDSignInUIDelegate {
         GIDSignIn.sharedInstance().uiDelegate = self
         GIDSignIn.sharedInstance().signIn()
         // TODO(Rui) Configure the sign-in button look/feel
-
+        let firebaseAuth = FIRAuth.auth()
+        do {
+            try firebaseAuth?.signOut()
+        } catch let signOutError as NSError {
+            print ("Error signing out: %@", signOutError)
+        }
 
         // Do any additional setup after loading the view.
     }
