@@ -37,6 +37,14 @@
                                     <action selector="goToClasses:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a5p-Tq-Jnd"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZIp-9y-fce">
+                                <rect key="frame" x="158" y="412" width="51" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Sign In!"/>
+                                <connections>
+                                    <segue destination="vGI-nc-Bsh" kind="show" id="DeD-De-HID"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -46,7 +54,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="202" y="134"/>
+            <point key="canvasLocation" x="200.80000000000001" y="133.5832083958021"/>
         </scene>
         <!--Class Search-->
         <scene sceneID="sPb-q6-SFs">
@@ -97,7 +105,7 @@
         <scene sceneID="Xfv-F5-NzY">
             <objects>
                 <navigationController id="Uis-eB-TdN" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QMh-16-W0e">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="QMh-16-W0e">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.0" green="0.80392156859999997" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
@@ -179,10 +187,10 @@
             </objects>
             <point key="canvasLocation" x="516" y="1216.6416791604199"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign In Controller-->
         <scene sceneID="Yq8-Th-Re1">
             <objects>
-                <viewController id="vGI-nc-Bsh" sceneMemberID="viewController">
+                <viewController id="vGI-nc-Bsh" customClass="SignInController" customModule="DormHub" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="NH5-GF-WPZ"/>
                         <viewControllerLayoutGuide type="bottom" id="v1k-Pl-k3e"/>
@@ -190,12 +198,19 @@
                     <view key="view" contentMode="scaleToFill" id="RbV-G0-5Ao">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Ht-Do-DYj" customClass="GIDSignInButton">
+                                <rect key="frame" x="67" y="269" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LPy-ap-oDq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="516" y="1941"/>
+            <point key="canvasLocation" x="-524" y="1896"/>
         </scene>
         <!--Daha wa post-->
         <scene sceneID="V53-70-aeJ">
@@ -288,9 +303,11 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xd7-YP-a5T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-911" y="547"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="v77-E8-iKG"/>
+        <segue reference="pAD-Fk-1Bn"/>
+        <segue reference="DeD-De-HID"/>
     </inferredMetricsTieBreakers>
 </document>
