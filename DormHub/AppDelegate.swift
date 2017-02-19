@@ -107,7 +107,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error?) {
         // ...
         if let error = error {
-            // ...
+            print("HI")
+
             return
         }
         
@@ -118,6 +119,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
             // ...
             if let error = error {
                 // ...
+                print("HI")
                 return
             }
     }

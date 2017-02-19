@@ -40,7 +40,6 @@ class daha_wa_post: UIViewController {
 
         let email = user?.email
         let uid = user?.uid
-        let photoURL = user?.photoURL
         task.email = email;
         task.userid=uid;
         
